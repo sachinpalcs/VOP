@@ -2,31 +2,55 @@ export const services = [
   {
     id: 1,
     title: "Political Strategy & Campaign Planning",
-    description: "Comprehensive election roadmaps covering candidate positioning and booth-level micro-planning.", // [cite: 46, 48, 49]
-    features: ["Election roadmap (pre, during, post)", "Opposition & risk assessment", "Poll-day strategy"] // [cite: 47, 51, 52]
+    description: "Election roadmap (pre, during, post) and candidate positioning.",
   },
   {
     id: 2,
     title: "Constituency Research & Ground Intelligence",
-    description: "Deep-dive analysis into voter segmentation and local issue identification.", // [cite: 53, 54, 56]
-    features: ["Caste/community mapping", "Surveys & feedback systems", "Swing voter analysis"] // [cite: 55, 57, 58]
+    description: "Voter segmentation and detailed caste/community mapping.",
   },
   {
     id: 3,
     title: "Narrative Building & Political Branding",
-    description: "Developing a powerful campaign narrative and messaging framework.", // [cite: 59, 60, 61]
-    features: ["Speech & manifesto inputs", "Crisis narrative control", "Image building"] // [cite: 62, 63, 64]
+    description: "Campaign narrative development and crisis narrative control.",
+  }
+];
+
+export const detailedServices = [
+  {
+    id: "strategy",
+    title: "Political Strategy & Campaign Planning",
+    tagline: "Winning with credibility and trust.", // [cite: 43]
+    description: "We design a comprehensive election roadmap covering every phase of the campaign—pre-poll, during-poll, and post-poll monitoring.", // [cite: 46, 47]
+    process: [
+      "Candidate positioning and identity building", // [cite: 48]
+      "Booth-level micro-planning and execution", // [cite: 49]
+      "Opposition and risk assessment", // [cite: 51]
+      "Poll-day strategy and monitoring systems" // [cite: 52]
+    ]
   },
   {
-    id: 4,
-    title: "Election War Room & Monitoring",
-    description: "Structured decision-making systems with field data consolidation.", // [cite: 65, 66, 69]
-    features: ["Daily reporting frameworks", "Message alignment checks", "Rapid response planning"] // [cite: 68, 70, 71]
+    id: "research",
+    title: "Constituency Research & Ground Intelligence",
+    tagline: "Insight-driven ground reality.", // [cite: 14]
+    description: "Deep-dive research into local culture, voter psychology, and political realities to identify the pulse of the constituency.", // [cite: 97, 53]
+    process: [
+      "Detailed voter segmentation", // [cite: 54]
+      "Caste and community mapping", // [cite: 55]
+      "Local issue identification and feedback loops", // [cite: 56, 57]
+      "Swing voter and influencer analysis" // [cite: 58]
+    ]
   },
   {
-    id: 5,
-    title: "Digital & Social Media Campaigning",
-    description: "Platform-wise strategy for Facebook, Instagram, X, and YouTube.", // [cite: 72, 73]
-    features: ["Political content creation", "WhatsApp & volunteer networks", "Sentiment tracking"] // [cite: 74, 76, 77]
+    id: "branding",
+    title: "Narrative Building & Political Branding",
+    tagline: "Shaping perceptions with integrity.", // [cite: 16]
+    description: "Developing a powerful campaign narrative that aligns with the candidate’s image and addresses the electorate's needs.", // [cite: 59, 60]
+    process: [
+      "Slogan and messaging framework development", // [cite: 61]
+      "Speech and manifesto content inputs", // [cite: 62]
+      "Image building (Ground + Media presence)", // [cite: 63]
+      "Crisis narrative control and rapid response" // [cite: 64]
+    ]
   }
 ];
