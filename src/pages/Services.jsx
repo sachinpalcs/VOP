@@ -11,7 +11,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Detailed Services</h1>
           <p className="text-blue-100 max-w-2xl mx-auto">
-            Strategic support with structured decision-making systems. [cite: 66]
+            Strategic support with structured decision-making systems.
           </p>
         </div>
       </section>
@@ -67,7 +67,7 @@ const Services = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h3 className="text-[#001f3f] font-bold mb-4">Our Commitment</h3>
           <p className="text-sm text-gray-500 italic">
-            All services are delivered with total rejection of hate, misinformation, and manipulation. [cite: 113]
+            All services are delivered with total rejection of hate, misinformation, and manipulation. 
           </p>
         </div>
       </section>

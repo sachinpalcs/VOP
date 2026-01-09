@@ -27,7 +27,7 @@ export const detailedServices = [
     id: "branding",
     title: "Narrative Building & Political Branding",
     tagline: "Shaping perceptions with integrity.",
-    description: "Developing a powerful campaign narrative that aligns with the candidate’s image and addresses the electorate's needs.", // [cite: 59, 60]
+    description: "Developing a powerful campaign narrative that aligns with the candidate's image and addresses the electorate's needs.", // [cite: 59, 60]
     process: [
       "Slogan and messaging framework development",
       "Speech and manifesto content inputs",

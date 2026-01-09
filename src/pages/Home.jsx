@@ -16,7 +16,7 @@ const Home = () => {
           <h2 className="text-2xl font-bold text-[#001f3f] mb-4">Who We Are</h2>
           <p className="max-w-3xl mx-auto text-gray-600 text-lg leading-relaxed">
             Vision of Politics is a premier political consultancy dedicated to long-term democratic strengthening. 
-            We provide leaders with the intelligence needed to win with credibility and trust. [cite: 36, 42, 43]
+            We provide leaders with the intelligence needed to win with credibility and trust.
           </p>
         </div>
       </section>
@@ -30,7 +30,7 @@ const Home = () => {
           <div className="flex justify-between items-end mb-12">
             <div>
               <h2 className="text-3xl font-bold text-[#001f3f]">Core Services</h2>
-              <p className="text-gray-500 mt-2">Data-driven solutions for modern campaigns [cite: 27]</p>
+              <p className="text-gray-500 mt-2">Data-driven solutions for modern campaigns</p>
             </div>
             <Link to="/services" className="text-[#c41e3a] font-bold hover:underline hidden sm:block">
               View All Services →
@@ -58,7 +58,7 @@ const Home = () => {
             Ready to Strategize Your Next Move?
           </h2>
           <p className="text-blue-100 mb-8">
-            Invite political leaders and candidates to connect for professional campaign management. [cite: 33]
+            Invite political leaders and candidates to connect for professional campaign management.
           </p>
           <Link 
             to="/contact" 
