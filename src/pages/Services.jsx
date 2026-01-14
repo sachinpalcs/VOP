@@ -85,7 +85,7 @@ const Services = () => {
   return (
     <div className="bg-white">
       {/* 1. Authority Header */}
-      <section className="bg-[#001f3f] py-24 text-white relative overflow-hidden">
+      <section className="bg-[#001f3f] py-20 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#c41e3a] opacity-10 rounded-full -mr-32 -mt-32"></div>
         <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Our Capabilities</h1>

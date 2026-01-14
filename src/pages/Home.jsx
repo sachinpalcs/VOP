@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/home/Hero';
 import Pillars from '../components/home/Pillars';
 import { services } from '../data/services';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
       <Pillars />
 
       {/* Core Services Overview [cite: 17, 18] */}
-      <section className="py-20 bg-white border-t border-gray-100">
+      {/* <section className="py-20 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -35,9 +36,10 @@ const Home = () => {
             <Link to="/services" className="text-[#c41e3a] font-bold hover:underline hidden sm:block">
               View All Services →
             </Link>
-          </div>
+          </div> */}
+          
 
-          <div className="grid md:grid-cols-3 gap-6">
+          {/* <div className="grid md:grid-cols-3 gap-6">
             {services.slice(0, 3).map((service) => (
               <div key={service.id} className="p-8 bg-gray-50 rounded-xl border border-transparent hover:border-[#c41e3a] transition-all">
                 <h3 className="font-bold text-[#001f3f] text-xl mb-4">{service.title}</h3>
@@ -49,7 +51,41 @@ const Home = () => {
             ))}
           </div>
         </div>
+      </section> */}
+
+      <section className="py-20 bg-white border-t border-gray-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 mb-12 flex justify-between items-end">
+          <div>
+            <h2 className="text-3xl font-bold text-[#001f3f]">Core Services</h2>
+            <p className="text-gray-500 mt-2">Data-driven solutions for modern campaigns</p>
+          </div>
+          <Link to="/services" className="text-[#c41e3a] font-bold hover:underline">
+            View All
+          </Link>
+        </div>
+
+        <div className="relative flex overflow-hidden">
+          <motion.div 
+            className="flex gap-6 pr-6"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+          >
+            {services.map((service, idx) => (
+              <div 
+                key={idx} 
+                className="min-w-[350px] p-8 bg-gray-50 rounded-xl border border-transparent hover:border-[#c41e3a] transition-all flex-shrink-0"
+              >
+                <h3 className="font-bold text-[#001f3f] text-xl mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6 text-sm">{service.description}</p>
+                <Link to="/services" className="text-[#c41e3a] text-sm font-bold uppercase">
+                  Learn More
+                </Link>
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </section>
+
 
       {/* Final CTA [cite: 32, 33] */}
       <section className="bg-[#001f3f] py-16">

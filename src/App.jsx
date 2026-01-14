@@ -11,6 +11,7 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import OurWork from './pages/OurWork';
+import Ethics from './pages/Ethics';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/our-work" element={<OurWork />} />
+      <Route path="/ethics-value" element={<Ethics />} />
                 
     </Route>
   )
