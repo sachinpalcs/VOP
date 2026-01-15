@@ -4,6 +4,7 @@ import Hero from '../components/home/Hero';
 import Pillars from '../components/home/Pillars';
 import { services } from '../data/services';
 import { motion, AnimatePresence } from 'framer-motion';
+import {constituencies} from '../data/constituencies';
 
 const Home = () => {
   return (
@@ -80,6 +81,40 @@ const Home = () => {
                 <Link to="/services" className="text-[#c41e3a] text-sm font-bold uppercase">
                   Learn More
                 </Link>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+
+      <section className="py-20 bg-white border-t border-gray-100 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 mb-12 flex justify-between items-end">
+          <div>
+            <h2 className="text-3xl font-bold text-[#001f3f]">Our work</h2>
+            <p className="text-gray-500 mt-2">Ground Experience</p>
+          </div>
+          <Link to="/our-work" className="text-[#c41e3a] font-bold hover:underline">
+            View Details
+          </Link>
+        </div>
+
+        <div className="relative flex overflow-hidden">
+          <motion.div 
+            className="flex gap-6 pr-6"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+          >
+            {constituencies.map((constituency, idx) => (
+              <div 
+                key={idx} 
+                className="min-w-60 p-5 bg-gray-50 rounded-xl border border-transparent hover:border-[#c41e3a] transition-all shrink-0"
+              >
+                <h3 className="font-bold text-[#001f3f] text-xl mb-4">{constituency}</h3>
+                {/* <p className="text-gray-600 mb-6 text-sm">{constituency.description}</p> */}
+                {/* <Link to="/services" className="text-[#c41e3a] text-sm font-bold uppercase">
+                  Learn More
+                </Link> */}
               </div>
             ))}
           </motion.div>
