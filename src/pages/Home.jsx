@@ -73,7 +73,7 @@ const Home = () => {
             {services.map((service, idx) => (
               <div 
                 key={idx} 
-                className="min-w-[350px] p-8 bg-gray-50 rounded-xl border border-transparent hover:border-[#c41e3a] transition-all flex-shrink-0"
+                className="min-w-87.5 p-8 bg-gray-50 rounded-xl border border-transparent hover:border-[#c41e3a] transition-all shrink-0"
               >
                 <h3 className="font-bold text-[#001f3f] text-xl mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6 text-sm">{service.description}</p>
